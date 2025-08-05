@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: schedula
+    env: node
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    branch: main
+    region: oregon
+    plan: free
+    envVars:
+      - key: PORT
+        value: 3000
